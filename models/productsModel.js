@@ -18,7 +18,7 @@ class Products {
       } else {
         const data = res.rows;
         const products = data.map(
-          (el) => new Products(el.id, el.email, el.password)
+          (el) => new Products(el.id, el.name, el.image)
         );
         cb(null, products);
       }

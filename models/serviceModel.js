@@ -18,7 +18,7 @@ class Services {
       } else {
         const data = res.rows;
         const services = data.map(
-          (el) => new Services(el.id, el.email, el.password)
+          (el) => new Services(el.id, el.name, el.image)
         );
         cb(null, services);
       }
